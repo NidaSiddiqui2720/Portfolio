@@ -1,62 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Hello, I'm <span class="typing">Nida Siddiqui</span></h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+    <header>
+        <div class="nav">
+            <div class="logo"> About <span class="highlight">Me.</span></div>
+                <div class="menu">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#Projects">Projects</a>
+                <a href="#Contact">Contact</a>
+                </div>
+        </div>
+    </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I am a passionate frontend developer skilled in HTML, CSS, and JavaScript.
-      I love building responsive and user-friendly websites.
-    </p>
-  </section>
+    <section class="hero">
+        <div class="inner">
+            <div class="left">
+                <h2 class="hello">Hello, Welcome</h2>
+                <h1>I m <span>Nida Siddiqui</span></h1>
+                <p> A creative and detail-oriented Frontend Developer with a strong focus on crafting modern, responsive, and visually appealing websites.</p>
+                <div class="button">
+                    <a href="#Contact">Contact Us</a>
+                </div>
+            </div>
+            <div class="right">
+                <div class="img">
+                    <img src="assets/clg(1)(1).png">
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Portfolio Website</h3>
-      <p>A personal website to showcase my work and contact details.</p>
+    <section class="about" id="about">
+        <div class="inner">
+            <div class="left">
+                <img src="assets/aa.jpg">
+            </div>
+
+            <div class="right">
+                <div class="aboutme">
+                <h1>About Me</h1>
+                </div>
+                <div class="content">
+                    <h1>Hi,I'm <span class='nn'>Nida Siddiqui</span></h1>
+                    <p>I'm a BCA student & frontend Developer who builds clean & responsive websites using HTML, CSS and JavaScript. I enjoy learning new tools and creating projects to improve my skills.</p>
+                    <div class="button">
+                        <a href="assets/Screenshot 2025-09-16 233252.png">Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="bottom">
+                <div class="one">
+                    1+ <br>years learning
+                </div>
+                <div class="two">
+                    5+ <br> Projects
+                </div>
+                <div class="three">
+                    3+ <br> Skills
+                </div>
+            </div>
+    </section>
+
+    <section id="skills" class="skills">
+  <div class="inner">
+    <h1>Skills</h1>
+    <p>Tools and technologies I use regularly</p>
+    <p>About my Technical skills I have a knowledge of languages like C++, Python, HTML, CSS, JavaScript</p>
+    <div class="list">
+        <div class="lang">
+            <h1>Languages</h1>
+        <ul>
+            <li>C++</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+        </ul>
+        </div>
+        
+        <div class="tool">
+            <h1>Tools</h1>
+        <ul>
+            <li>VS Code</li>
+            <li>Jupyter</li>
+            <li>IntelliJ</li>
+            <li>Tableau</li>
+        </ul>
+        </div>
+        <div class="frameworks">
+  <h1>Frameworks / Libraries</h1>
+  <ul>
+    <li>Flask</li>
+    <li>React.js</li>
+    <li>Bootstrap</li>
+    <li>NumPy</li>
+    <li>Pandas</li>
+  </ul>
+</div>
+
+        <div class="db">
+            <h1>Database</h1>
+        <ul>
+            <li>MySql</li>
+        </ul>
+        </div>
+        
     </div>
-    <div class="project">
-      <h3> EdTech & Learning Transformation Project </h3>
-      <p>In my project included:
 
-        Clean and engaging UI/UX design.
-        
-        Functional Login/Register/Contact Us system using PHP & MySQL.
-        
-        A Tech Chatbot to solve coding-related queries.
-        
-        Easy and intuitive user navigation.
-        
-        Added Student interface and Teacher interface seperate.</p>
+    <div class="skills-grid">
+      <div class="skill-box">
+        <div class="info">
+          <span>HTML</span>
+          <span>90%</span>
+        </div>
+        <div class="bar">
+          <div class="fill" style="width: 90%;"></div>
+        </div>
+      </div>
+
+      <div class="skill-box">
+        <div class="info">
+          <span>CSS</span>
+          <span>85%</span>
+        </div>
+        <div class="bar">
+          <div class="fill" style="width: 85%;"></div>
+        </div>
+      </div>
+
+      <div class="skill-box">
+        <div class="info">
+          <span>JavaScript</span>
+          <span>70%</span>
+        </div>
+        <div class="bar">
+          <div class="fill" style="width: 70%;"></div>
+        </div>
+      </div>
+
+      <div class="skill-box">
+        <div class="info">
+          <span>Python</span>
+          <span>70%</span>
+        </div>
+        <div class="bar">
+          <div class="fill" style="width: 70%;"></div>
+        </div>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="https://myaccount.google.com/?hl=en_GB&utm_source=OGB&utm_medium=act&gar=WzEyMF0">Gmail</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/nida-siddiqui-586882308/">Linkedin</a></p>
-  </section>
+<section id="Projects" class="projects">
+    <h1 class="title">Projects</h1>
+    <p>A few Projects I built using HTML, CSS, JavaScript and Python.</p>
+    <div class="btn">
+  <div class="one filter-btn active" data-filter="all"><span>All</span></div>
+  <div class="two filter-btn" data-filter="web"><span>Web</span></div>
+  <div class="three filter-btn" data-filter="data"><span>Data</span></div>
+  <div class="four filter-btn" data-filter="other"><span>Other</span></div>
+</div>
 
-  <footer>
-    <p>Made with ❤️ by Nida Siddiqui</p>
-  </footer>
+   <div class="box">
+  <div class="card" data-category="web">
+    <img src="assets/Screenshot 2025-10-31 233235.png" alt="Project 1">
+    <h2>Portfolio Website</h2>
+    <p>My personal responsive portfolio made with HTML, CSS, and JS.</p>
+    <a href="#">View</a>
+  </div>
 
-  <script src="script.js"></script>
-    
+  <div class="card" data-category="web">
+    <img src="assets/image.png" alt="Project 2">
+    <h2>To-Do List</h2>
+    <p>A simple app to add, delete, and manage daily tasks.</p>
+    <a href="https://github.com/NidaSiddiqui2720/todo-list" target="_blank" >View</a>
+  </div>
+
+  <div class="card" data-category="data">
+    <img src="assets/Screenshot 2025-10-31 233516.png" alt="Project 3">
+    <h2>Pizza Sales Dashboard</h2>
+    <p>Data analysis project using Python, Pandas, and Tableau.</p>
+   <a href="https://github.com/NidaSiddiqui2720/Pizza-Sales-Analysis" target="_blank">View</a>
+  </div>
+
+  <div class="card" data-category="web">
+    <img src="assets/Screenshot 2025-10-31 235518.png" alt="Project 4">
+    <h2>AI Career Counsellor</h2>
+    <p>AI project with Flask, LangChain and PDF QA.</p>
+    <a href="https://github.com/NidaSiddiqui2720/AI-Career-Consellor" target="_blank">View</a>
+  </div>
+
+  <div class="card" data-category="other">
+    <img src="assets/Screenshot 2025-10-31 235611.png" alt="Project 5">
+    <h2>Login / Register Page</h2>
+    <p>Auth form with validation and image preview.</p>
+    <a href="https://github.com/NidaSiddiqui2720/Login-Page/upload" target="_blank">View</a>
+  </div>
+</div>
+
+</section>
+
+<section id="Contact" class="Contact">
+    <h1>Contact Me</h1>
+    <p>Have a project or question? send me a message - I'll reply soon.</p><br><br><br>
+    <div class="form">
+        <form class="f1">
+            <label for=name>Name</label><br>
+            <input type="text" placeholder="Your Name"><br>
+            <label for="email">Email</label> <br>
+            <input type="email" placeholder="You@example.com"><br>
+           <label for="message">Your Message:</label><br>
+            <textarea id="message" name="message" rows="2" cols="40" placeholder="Type your message here..."></textarea><br>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="contact-info">
+  <h2>Get in Touch</h2>
+  <p><strong>📍 Address:</strong> Chowk Bazar Jwalapur, Haridwar</p>
+  <p><strong>📞 Phone:</strong> +91 8273260719</p>
+  <p><strong>✉️ Email:</strong> nidasiddiqui2720@gmail.com</p>
+</div>
+
+    </div>
+</section>
+
+<!-- Modal Box -->
+<div id="projectModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img id="modalImg" src="" alt="">
+    <h2 id="modalTitle"></h2>
+    <p id="modalDesc"></p>
+    <a id="modalLink" href="#" target="_blank">Open Project</a>
+  </div>
+</div>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const filterButtons = document.querySelectorAll(".filter-btn");
+  const cards = document.querySelectorAll(".card");
+
+  function setActiveButton(clickedBtn) {
+    filterButtons.forEach(btn => btn.classList.remove("active"));
+    clickedBtn.classList.add("active");
+  }
+
+  function filterCards(filter) {
+    cards.forEach(card => {
+      // support multi-category in data-category (space-separated)
+      const categories = (card.dataset.category || "").split(" ").map(s => s.trim()).filter(Boolean);
+      if (filter === "all") {
+        card.classList.remove("hidden");
+      } else {
+        // show when card has the requested category
+        if (categories.includes(filter)) {
+          card.classList.remove("hidden");
+        } else {
+          card.classList.add("hidden");
+        }
+      }
+    });
+  }
+
+  // attach click listeners
+  filterButtons.forEach(btn => {
+    btn.addEventListener("click", function() {
+      const filter = this.dataset.filter; // e.g. 'web' / 'data' / 'all'
+      setActiveButton(this);
+      filterCards(filter);
+    });
+  });
+
+  // initial state: show all
+  filterCards("all");
+});
+
+
+// Get all view buttons
+const viewButtons = document.querySelectorAll(".card a");
+const modal = document.getElementById("projectModal");
+const modalImg = document.getElementById("modalImg");
+const modalTitle = document.getElementById("modalTitle");
+const modalDesc = document.getElementById("modalDesc");
+const modalLink = document.getElementById("modalLink");
+const closeBtn = document.querySelector(".close");
+
+// Click event on each 'View' button
+viewButtons.forEach(btn => {
+  btn.addEventListener("click", (e) => {
+    e.preventDefault(); // stop default link behavior
+
+    // Get project details from that card
+    const card = btn.closest(".card");
+    const imgSrc = card.querySelector("img").src;
+    const title = card.querySelector("h2").innerText;
+    const desc = card.querySelector("p").innerText;
+    const link = btn.getAttribute("href");
+
+    // Set modal content
+    modalImg.src = imgSrc;
+    modalTitle.innerText = title;
+    modalDesc.innerText = desc;
+    modalLink.href = link;
+
+    // Show modal
+    modal.style.display = "flex";
+  });
+});
+
+// Close modal
+closeBtn.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+
+// Click outside modal closes it
+window.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    modal.style.display = "none";
+  }
+});
+
+
+</script>
+
+
 </body>
 </html>

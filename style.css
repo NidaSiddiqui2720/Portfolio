@@ -1,52 +1,475 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
-  }
-  body {
-    background-color: #f0f0f0;
-    color: #333;
-    line-height: 1.6;
-  }
-  header {
-    background-color: #222;
+}
+
+body{
+    background-color: #0f172a;
+    font-family: 'poppins',sans-serif;
     color: white;
-    padding: 20px 0;
-    text-align: center;
-  }
-  nav a {
-    color: white;
-    margin: 0 15px;
+}
+.nav{
+    width: 100%;
+    background-color: #0b1120;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+}
+.logo{
+    font-size: 22px;
+    font-weight: bold;
+}
+.menu a{
     text-decoration: none;
-    font-weight: bold;
-  }
-  section {
-    padding: 40px 20px;
-    max-width: 1000px;
-    margin: auto;
-  }
-  h2 {
-    color: #444;
-    margin-bottom: 20px;
-  }
-  .project {
-    background-color: white;
-    padding: 20px;
-    margin: 10px 0;
-    border-left: 4px solid #007acc;
-    transition: transform 0.2s;
-  }
-  .project:hover {
-    transform: scale(1.02);
-  }
-  footer {
-    text-align: center;
-    background-color: #222;
+    color: aliceblue;
+    margin-left: 25px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+.menu a:hover{
+    color:#facc15;
+}
+/* ========== Hero Section basic setup ========== */
+.hero {
+  background-color: #ddd;   /* halka grey background */
+  padding: 60px 0;            /* upar aur neeche space */
+}
+
+/* andar ke content ko ek line me side by side karne ke liye */
+.hero .inner {
+  display: flex;               /* left aur right side ek line me */
+  justify-content: space-between; /* dono ke beech space */
+  align-items: center;          /* vertically center me align */
+  width: 80%;                   /* total width 80% of screen */
+  margin: auto;                 /* center me laane ke liye */
+}
+
+/* left side (text part) */
+.left {
+  width: 50%;                   /* aadha screen part text ke liye */
+}
+
+/* Hello line */
+.left .hello {
+  color: orangered;
+  font-weight: 40px;               /* blue color */
+  font-size: 20px;
+  margin-bottom: 10px;          /* thoda gap niche */
+}
+
+/* Main heading */
+.left h1 {
+  font-size: 36px;
+  color: #333;                  /* dark grey */
+  margin-bottom: 15px;
+}
+
+.left h1 span {
+  color: #007bff;               /* name ko blue kar diya */
+}
+
+/* Description text */
+.left p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;             /* lines ke beech thoda space */
+  margin-bottom: 20px;
+}
+
+/* Contact Us button */
+.button a {
+  background-color: #007bff;    /* blue button */
+  color: white;                 /* white text */
+  text-decoration: none;        /* underline hata diya */
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.button a:hover {
+  background-color: #0056b3;    /* hover pe dark blue */
+}
+
+/* right side (image part) */
+.right {
+  width: 45%;
+  text-align: center;           /* image ko center me laane ke liye */
+}
+
+/* image styling */
+.right img {
+  width: 300px;                 /* photo size */
+  border-radius: 10px;          /* corners gol */
+}
+.about{
+    background-color: #111827;
     color: white;
-    padding: 20px 0;
+    padding: 100px 80px;
+}
+.about .inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about .left{
+    flex: 1;
+    text-align: center;
+}
+.about .left img{
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    object-fit: cover;
+    border-radius: 50%;
+    object-fit: cover;
+    height: 250px;
+    width: 250px;
+    box-shadow: 0 0 25px rgba(225, 225, 225 0.6);
+    border: 4px solid white;
+}
+.about .right{
+    flex: 1;
+    padding: 20px 40px;
+}
+.about .right .h1{
+    font-size: 32px;
+    color: #facc15;
+    margin-bottom: 10px;
+}
+.about .right p{
+line-height: 1.6;
+margin-bottom: 15px;
+color: #ccc;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 70px;
+    column-gap: 40px;
+}
+.bottom div {
+  width: 120px;                /* same width for all */
+  height: 120px;               /* same height for all */
+  background-color: #222;      /* dark background */
+  color: #fff;                 /* white text */
+  text-align: center;          /* center text horizontally */
+  border-radius: 10px;         /* rounded corners */
+  padding-top: 25px;           /* center text vertically */
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s;            /* smooth hover effect */
+}
+.bottom div:hover {
+  background-color: #ffd700;   /* yellow on hover */
+  color: #000;                 /* black text on hover */
+  transform: scale(1.05);      /* slight zoom effect */
+}
+.skills {
+  background-color: #0b0e17; /* dark navy background */
+  color: white;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.skills h1 {
+  font-size: 36px;
+  color: #facc15;
+  margin-bottom: 10px;
+}
+
+.skills p {
+  color: #aaa;
+  margin-bottom: 40px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.skill-box {
+  background: #111827;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.bar {
+  background: #2e2e3f;
+  height: 8px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  background: #facc15; /* yellow line */
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+    width: 90%;
   }
-  .typing {
-    font-weight: bold;
-    color: #007acc;
-  }
+}
+.skills .list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    padding-bottom: 60px;
+
+}
+.list {
+  display: flex;
+  justify-content: center;  /* centers all boxes */
+  align-items: flex-start;  /* aligns headings at top */
+  gap: 50px;                /* spacing between columns */
+  margin-top: 40px;
+}
+
+.list div {
+  background-color: #111;   /* optional: card look */
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+}
+
+.list h1 {
+  color: #facc15; /* yellow heading */
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.list ul {
+  list-style-type: disc;
+  padding-left: 25px; /* space for bullet */
+}
+
+.list li {
+  margin: 8px 0;
+  color: white;
+}
+.about .right .aboutme h1{
+    color: tomato;
+}
+.projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 120px;
+}
+.title{
+    color: #facc15;
+    align-items: center;
+    padding: 40px;
+    padding-top: 60px;
+}
+.projects .btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 20px;
+
+}
+.projects .btn div:hover {
+  background-color: #facc15;
+  color: black;
+  transition: 0.3s;
+}
+/* छिपाने के लिए */
+.card.hidden {
+  display: none;
+}
+
+/* बटन का active state */
+.filter-btn {
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 8px;
+  user-select: none;
+  transition: transform .15s, background-color .15s;
+  background-color: #2e2e3f;
+}
+.filter-btn.active {
+  background: #2e2e3f;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* optional: hover */
+.filter-btn:hover { transform: translateY(-2px); }
+
+.box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;  /* makes it responsive */
+  gap: 20px;        /* space between boxes */
+}
+
+.card {
+  background: #1e293b;
+  border-radius: 10px;
+  width: 260px;
+  padding: 15px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.card h2 {
+  margin: 10px 0;
+  font-size: 20px;
+  color: #facc15;
+}
+
+.card p {
+  font-size: 14px;
+  color: #ddd;
+  margin-bottom: 10px;
+}
+
+.card a {
+  display: inline-block;
+  background: #facc15;
+  color: black;
+  padding: 6px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.card a:hover {
+  background: #ffe066;
+}
+.Contact {
+  background-color: #0f172a;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.Contact h1{
+  color: #facc15;
+  
+}
+.f1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.f1 label {
+  margin-bottom: 0.2px /* label aur input ke beech chhota gap */
+}
+
+.f1 input,
+.f1 textarea {
+  margin-bottom: 10px;  /* har input group ke baad bada gap */
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: #0f172a;
+  color: whitesmoke;
+  border: white;
+  font-weight: 20px;
+}
+.form{
+  background-color: #1e293b;
+  padding: 20px 30px;
+}
+.Contact button{
+padding: 10px 20px;
+background-color: #facc15;
+color: #0b0e17;
+}
+.contact-info {
+  background-color: #0f172a;
+  color: #f1f5f9;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+/* Modal background */
+.modal {
+  display: none; 
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Modal box */
+.modal-content {
+  background: #fff;
+  padding: 25px;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 12px;
+  text-align: center;
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-content img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.modal-content h2 {
+  margin: 10px 0;
+}
+
+.modal-content a {
+  background: #007bff;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.modal-content a:hover {
+  background: #0056b3;
+}
+
+/* Close Button */
+.close {
+  position: absolute;
+  top: 10px; right: 15px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(-10px);}
+  to {opacity: 1; transform: translateY(0);}
+}
